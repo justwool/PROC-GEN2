@@ -25,14 +25,17 @@ async function loadScript(src) {
 }
 
 function repoFileUrl(relPath) {
-  return `/@fs${__REPO_ROOT__}/${relPath}`;
+  if (relPath.startsWith('data/')) return `/${relPath}`;
+  return `/py/${relPath}`;
 }
 
 export async function bootPyodide({ onWrite }) {
   stdinQueue = [];
   stdinResolvers = [];
   await loadScript(PYODIDE_URL);
-  pyodide = await globalThis.loadPyodide({});
+  pyodide = await globalThis.loadPyodide({
+    indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/',
+  });
 
   if (typeof SharedArrayBuffer !== 'undefined' && pyodide.setInterruptBuffer) {
     interruptBuffer = new Uint8Array(new SharedArrayBuffer(1));
