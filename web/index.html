@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROC-GEN2 Terminal Bridge</title>
+    <link rel="stylesheet" href="/src/ui.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>PROC-GEN2 Browser Terminal</h1>
+        <div class="controls">
+          <button id="reset-btn">Reset runtime</button>
+          <button id="stop-btn">Stop</button>
+        </div>
+      </header>
+      <main>
+        <section class="terminal-pane">
+          <div id="terminal"></div>
+        </section>
+        <aside class="gallery-pane">
+          <h2>Gallery</h2>
+          <div class="gallery-actions">
+            <button id="download-latest">Download latest</button>
+            <button id="download-selected">Download selected</button>
+          </div>
+          <ol id="gallery-list"></ol>
+          <img id="preview" alt="PNG preview" />
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

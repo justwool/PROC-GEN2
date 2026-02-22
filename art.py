@@ -1906,23 +1906,29 @@ def main():
 
 ### GO
 
-try:
+def cli_entry():
 
     try:
-    
-        main()
+
+        try:
         
-        # import cProfile
-        # cProfile.run("main()")
-    
-    except Exception as e:
-        time.sleep(0.01)
-        print("\nart.py crashed:\n\n  "+repr(e)+"\n")
-        traceback.print_tb(e.__traceback__)
+            main()
+            
+            # import cProfile
+            # cProfile.run("main()")
+        
+        except Exception as e:
+            time.sleep(0.01)
+            print("\nart.py crashed:\n\n  "+repr(e)+"\n")
+            traceback.print_tb(e.__traceback__)
+            input("\nPress enter to quit.")
+            print("")
+            
+    except KeyboardInterrupt as e:
+        print("\n\nart.py forced to stop by KeyboardInterrupt.")
         input("\nPress enter to quit.")
         print("")
-        
-except KeyboardInterrupt as e:
-    print("\n\nart.py forced to stop by KeyboardInterrupt.")
-    input("\nPress enter to quit.")
-    print("")
+
+
+if __name__ == "__main__":
+    cli_entry()
