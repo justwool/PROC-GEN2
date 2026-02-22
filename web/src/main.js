@@ -31,7 +31,12 @@ async function init() {
     terminal.printPrompt();
   } catch (err) {
     pyReady = false;
-    terminal.writeln(`[boot error] ${err?.stack || err?.message || String(err)}`);
+    const msg =
+      err?.stack ||
+      err?.message ||
+      (typeof err === 'object' ? JSON.stringify(err, null, 2) : String(err));
+
+    terminal.writeln(`\r\n[boot error] ${msg}`);
   }
 }
 
