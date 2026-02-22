@@ -1,0 +1,1169 @@
+{
+    "class": "Version",
+    "prism": [
+        6,
+        9.306533109065647,
+        20.5,
+        0.512222387571888,
+        0.08
+    ],
+    "puddle": {
+        "class": "Puddle",
+        "hue_dirtiness_dist": [
+            0.9699971435365858,
+            0.9936608785150866,
+            1.0039077423476157,
+            0.20324861553443752,
+            0.415804339866384
+        ],
+        "sat_dirtiness_dist": [
+            0.8990189891055216,
+            0.9906160648215898,
+            1.0099550125849235,
+            0.3228484568237393,
+            5.878072344619182e-06
+        ],
+        "val_dirtiness_dist": [
+            0.8786827463145316,
+            0.9024019364280036,
+            0.9379465904874151,
+            0.6668579107520449,
+            0.024613000787314203
+        ],
+        "hue_stillness_dist": [
+            0.008150793847087176,
+            0.08550614457092012,
+            0.18412362365469123,
+            0.4078215504154207,
+            0.10405636050859403
+        ],
+        "sat_stillness_dist": [
+            0.15243218470168193,
+            0.8248147318360487,
+            0.8268654258979389,
+            0.9563767253064892,
+            0.4030307063481302
+        ],
+        "val_stillness_dist": [
+            0.0074614731912839806,
+            0.10115145507553094,
+            0.14233060301231967,
+            0.8942208921722515,
+            0.0952699508368081
+        ]
+    },
+    "pasteller": {
+        "class": "Pasteller",
+        "frac_mid": 0.08760025752847782,
+        "amt_sharp": 0.42478768630546726
+    },
+    "permuter": [
+        3.4515472861806806,
+        6.549656082038457,
+        6.995351982019601,
+        0.7918479373918741,
+        0.9844662498054484
+    ],
+    "procession": 2.0765315622129563,
+    "controller": {},
+    "conceiver": {
+        "8": {
+            "X": {
+                "class": "CartConcept",
+                "nice_chance": 0,
+                "unnice_chance": 1,
+                "mean_dist": [
+                    0,
+                    0.5,
+                    1,
+                    null,
+                    0
+                ],
+                "freqhood_dist": [
+                    0,
+                    0.6289763345009028,
+                    1,
+                    0,
+                    0
+                ],
+                "index_dist": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0.125
+                ],
+                "unnice_dist": [
+                    -0.5,
+                    0,
+                    0.5,
+                    0,
+                    0
+                ],
+                "updating": true
+            }
+        },
+        "9": {
+            "X": {
+                "class": "CartConcept",
+                "nice_chance": 0.5,
+                "unnice_chance": 0,
+                "mean_dist": [
+                    0,
+                    1,
+                    1,
+                    0.5,
+                    0
+                ],
+                "freqhood_dist": [
+                    0,
+                    0.45,
+                    1,
+                    0,
+                    0
+                ],
+                "index_dist": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                "unnice_dist": [
+                    -0.5,
+                    0,
+                    0.5,
+                    0,
+                    0.125
+                ],
+                "updating": true
+            }
+        },
+        "10": {
+            "X": {
+                "class": "CartConcept",
+                "nice_chance": 1,
+                "unnice_chance": 1,
+                "mean_dist": [
+                    0,
+                    0,
+                    1,
+                    0.5,
+                    0
+                ],
+                "freqhood_dist": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0.0010574198842632125
+                ],
+                "index_dist": [
+                    0,
+                    0,
+                    1,
+                    null,
+                    0.125
+                ],
+                "unnice_dist": [
+                    -0.5,
+                    0,
+                    0.5,
+                    0,
+                    0
+                ],
+                "updating": true
+            }
+        },
+        "11": {
+            "Y": {
+                "class": "CartConcept",
+                "nice_chance": 0,
+                "unnice_chance": 0.5,
+                "mean_dist": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                "freqhood_dist": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                "index_dist": [
+                    0,
+                    0,
+                    1,
+                    null,
+                    0.3549567865775688
+                ],
+                "unnice_dist": [
+                    -0.5,
+                    -0.5,
+                    0.5,
+                    0.37866548209172013,
+                    0.6393132729761389
+                ],
+                "updating": false
+            }
+        },
+        "12": {
+            "Y": {
+                "class": "CartConcept",
+                "nice_chance": 0,
+                "unnice_chance": 1,
+                "mean_dist": [
+                    0,
+                    0.5,
+                    1,
+                    null,
+                    0
+                ],
+                "freqhood_dist": [
+                    0,
+                    0.35,
+                    1,
+                    0.5,
+                    0
+                ],
+                "index_dist": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                ],
+                "unnice_dist": [
+                    -0.5,
+                    0.5,
+                    0.5,
+                    null,
+                    0.125
+                ],
+                "updating": true
+            }
+        },
+        "13": {
+            "Y": {
+                "class": "CartConcept",
+                "nice_chance": 0.5,
+                "unnice_chance": 1,
+                "mean_dist": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                "freqhood_dist": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0.125
+                ],
+                "index_dist": [
+                    0,
+                    0,
+                    1,
+                    0.5,
+                    0.125
+                ],
+                "unnice_dist": [
+                    -0.5,
+                    0.5,
+                    0.5,
+                    null,
+                    0
+                ],
+                "updating": true
+            }
+        },
+        "14": {
+            "SPIN": {
+                "class": "SpinConcept",
+                "wc": {
+                    "class": "WaveConcept",
+                    "nice_chance": 0.5,
+                    "unnice_chance": 1,
+                    "off_unnice_chance": 1,
+                    "freqhood_dist": [
+                        0,
+                        0.35,
+                        1,
+                        null,
+                        0
+                    ],
+                    "numerhood_dist": [
+                        0,
+                        0.35,
+                        1,
+                        0,
+                        0
+                    ],
+                    "denomhood_dist": [
+                        0,
+                        0.45,
+                        1,
+                        1,
+                        0
+                    ],
+                    "unnice_dist": [
+                        -1,
+                        -0.5,
+                        1,
+                        0,
+                        0
+                    ],
+                    "offreqhood_dist": [
+                        0,
+                        0.35,
+                        1,
+                        0,
+                        0.125
+                    ],
+                    "offdex_dist": [
+                        0,
+                        0.5,
+                        1,
+                        0.5,
+                        0
+                    ],
+                    "off_unnice_dist": [
+                        -1,
+                        0,
+                        1,
+                        0.5,
+                        0
+                    ]
+                },
+                "fc": {
+                    "class": "FanConcept",
+                    "shift_dist": [
+                        -1,
+                        0,
+                        1,
+                        0,
+                        0.125
+                    ],
+                    "logweight_dist": [
+                        0,
+                        0,
+                        0.5,
+                        1,
+                        0
+                    ]
+                },
+                "antiwise_chance": 0,
+                "armhood_dist": [
+                    0,
+                    0.5,
+                    1,
+                    0,
+                    0
+                ]
+            }
+        },
+        "21": {
+            "SPIN": {
+                "class": "SpinConcept",
+                "wc": {
+                    "class": "WaveConcept",
+                    "nice_chance": 1,
+                    "unnice_chance": 0,
+                    "off_unnice_chance": 0,
+                    "freqhood_dist": [
+                        0,
+                        0.45,
+                        1,
+                        0.5300800116157935,
+                        0.125
+                    ],
+                    "numerhood_dist": [
+                        0,
+                        0.45,
+                        1,
+                        1,
+                        0
+                    ],
+                    "denomhood_dist": [
+                        0,
+                        0,
+                        1,
+                        0.5,
+                        0
+                    ],
+                    "unnice_dist": [
+                        -1,
+                        0,
+                        1,
+                        null,
+                        0
+                    ],
+                    "offreqhood_dist": [
+                        0,
+                        0.35,
+                        1,
+                        1,
+                        0.125
+                    ],
+                    "offdex_dist": [
+                        0,
+                        0,
+                        1,
+                        null,
+                        0
+                    ],
+                    "off_unnice_dist": [
+                        -1,
+                        0,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                "fc": {
+                    "class": "FanConcept",
+                    "shift_dist": [
+                        -1,
+                        0,
+                        1,
+                        0,
+                        0.125
+                    ],
+                    "logweight_dist": [
+                        0,
+                        0,
+                        1,
+                        0.2797716297700643,
+                        0.125
+                    ]
+                },
+                "antiwise_chance": 1,
+                "armhood_dist": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                ]
+            }
+        },
+        "24": {
+            "SPIN": {
+                "class": "SpinConcept",
+                "wc": {
+                    "class": "WaveConcept",
+                    "nice_chance": 1,
+                    "unnice_chance": 0,
+                    "off_unnice_chance": 1,
+                    "freqhood_dist": [
+                        0,
+                        0.45,
+                        1,
+                        null,
+                        0
+                    ],
+                    "numerhood_dist": [
+                        0,
+                        0,
+                        1,
+                        1,
+                        0
+                    ],
+                    "denomhood_dist": [
+                        0,
+                        0.45,
+                        1,
+                        null,
+                        0
+                    ],
+                    "unnice_dist": [
+                        -1,
+                        0.5,
+                        1,
+                        null,
+                        0
+                    ],
+                    "offreqhood_dist": [
+                        0,
+                        0.35,
+                        1,
+                        0,
+                        0.125
+                    ],
+                    "offdex_dist": [
+                        0,
+                        0,
+                        1,
+                        1,
+                        0
+                    ],
+                    "off_unnice_dist": [
+                        -1,
+                        -0.5,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                "fc": {
+                    "class": "FanConcept",
+                    "shift_dist": [
+                        -1,
+                        -1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "logweight_dist": [
+                        -1,
+                        0,
+                        0.5,
+                        null,
+                        0
+                    ]
+                },
+                "antiwise_chance": 1,
+                "armhood_dist": [
+                    0,
+                    0,
+                    1,
+                    0.5,
+                    0
+                ]
+            }
+        },
+        "25": {
+            "SPIN": {
+                "class": "SpinConcept",
+                "wc": {
+                    "class": "WaveConcept",
+                    "nice_chance": 0.5,
+                    "unnice_chance": 0,
+                    "off_unnice_chance": 0,
+                    "freqhood_dist": [
+                        0,
+                        0.45,
+                        1,
+                        null,
+                        0
+                    ],
+                    "numerhood_dist": [
+                        0,
+                        0,
+                        1,
+                        1,
+                        0
+                    ],
+                    "denomhood_dist": [
+                        0,
+                        0.45,
+                        1,
+                        1,
+                        0
+                    ],
+                    "unnice_dist": [
+                        -1,
+                        -0.5,
+                        1,
+                        0.5,
+                        0
+                    ],
+                    "offreqhood_dist": [
+                        0,
+                        0.35,
+                        1,
+                        0,
+                        0.125
+                    ],
+                    "offdex_dist": [
+                        0,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "off_unnice_dist": [
+                        -1,
+                        0.5,
+                        1,
+                        0.5,
+                        0
+                    ]
+                },
+                "fc": {
+                    "class": "FanConcept",
+                    "shift_dist": [
+                        -1,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    "logweight_dist": [
+                        -0.5,
+                        0,
+                        0.5,
+                        0.5,
+                        0
+                    ]
+                },
+                "antiwise_chance": 1,
+                "armhood_dist": [
+                    0,
+                    0.5,
+                    1,
+                    1,
+                    0
+                ]
+            }
+        },
+        "15": {
+            "RAND": {
+                "class": "RandConcept",
+                "freqhood_dist": [
+                    0,
+                    0,
+                    1,
+                    0.5,
+                    0.125
+                ],
+                "squarity_dist": [
+                    0,
+                    0,
+                    1,
+                    0.5,
+                    0
+                ]
+            }
+        },
+        "18": {
+            "RAND": {
+                "class": "RandConcept",
+                "freqhood_dist": [
+                    0,
+                    0,
+                    1,
+                    0.5,
+                    0.125
+                ],
+                "squarity_dist": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ]
+            }
+        },
+        "16": {
+            "POWER": {
+                "class": "PowerConcept",
+                "weighing_base_chance": 0,
+                "base_weight_dist": [
+                    0,
+                    1,
+                    1,
+                    null,
+                    0
+                ],
+                "exp_weight_dist": [
+                    0,
+                    1,
+                    1,
+                    null,
+                    0
+                ],
+                "exp_lifthood_dist": [
+                    0,
+                    0,
+                    1,
+                    null,
+                    0
+                ]
+            }
+        },
+        "27": {
+            "POWER": {
+                "class": "PowerConcept",
+                "weighing_base_chance": 0,
+                "base_weight_dist": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                "exp_weight_dist": [
+                    0,
+                    1,
+                    1,
+                    0.5,
+                    0
+                ],
+                "exp_lifthood_dist": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                ]
+            }
+        },
+        "17": {
+            "MINX": {
+                "class": "MinxConcept",
+                "maxing_chance": 0.5,
+                "wc": {
+                    "class": "WeightConcept",
+                    "balanced_amt_dist": [
+                        0,
+                        0,
+                        1,
+                        null,
+                        0
+                    ],
+                    "imbalanced_base_dist": [
+                        0,
+                        1,
+                        5,
+                        0.5,
+                        0
+                    ],
+                    "reversing_chance": 0,
+                    "shufflity_dist": [
+                        0,
+                        1,
+                        1,
+                        0.5,
+                        0
+                    ],
+                    "starting_index_dist": [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ]
+                }
+            }
+        },
+        "22": {
+            "MINX": {
+                "class": "MinxConcept",
+                "maxing_chance": 0.5998526123655646,
+                "wc": {
+                    "class": "WeightConcept",
+                    "balanced_amt_dist": [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "imbalanced_base_dist": [
+                        0,
+                        1,
+                        5,
+                        0.5,
+                        0
+                    ],
+                    "reversing_chance": 1,
+                    "shufflity_dist": [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "starting_index_dist": [
+                        0,
+                        0,
+                        1,
+                        1,
+                        0
+                    ]
+                }
+            }
+        },
+        "26": {
+            "MINX": {
+                "class": "MinxConcept",
+                "maxing_chance": 0,
+                "wc": {
+                    "class": "WeightConcept",
+                    "balanced_amt_dist": [
+                        0,
+                        0.8637303099340992,
+                        1,
+                        1,
+                        0
+                    ],
+                    "imbalanced_base_dist": [
+                        0,
+                        1,
+                        5,
+                        0.5,
+                        0
+                    ],
+                    "reversing_chance": 0,
+                    "shufflity_dist": [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0
+                    ],
+                    "starting_index_dist": [
+                        0,
+                        0,
+                        1,
+                        null,
+                        0
+                    ]
+                }
+            }
+        },
+        "19": {
+            "INV": null
+        },
+        "20": {
+            "AMEAN": {
+                "class": "AmeanConcept",
+                "wc": {
+                    "class": "WeightConcept",
+                    "balanced_amt_dist": [
+                        0,
+                        0,
+                        1,
+                        1,
+                        0
+                    ],
+                    "imbalanced_base_dist": [
+                        0,
+                        5,
+                        5,
+                        0.5,
+                        0
+                    ],
+                    "reversing_chance": 0,
+                    "shufflity_dist": [
+                        0,
+                        1,
+                        1,
+                        0.5,
+                        0
+                    ],
+                    "starting_index_dist": [
+                        0,
+                        0,
+                        1,
+                        null,
+                        0
+                    ]
+                }
+            }
+        },
+        "23": {
+            "GMEAN": null
+        },
+        "28": {
+            "ARCFAN": {
+                "class": "ArcfanConcept",
+                "fc": {
+                    "class": "FanConcept",
+                    "shift_dist": [
+                        -1,
+                        1,
+                        1,
+                        0,
+                        0.25909139505960593
+                    ],
+                    "logweight_dist": [
+                        -0.5,
+                        0,
+                        1,
+                        1,
+                        0.125
+                    ]
+                }
+            }
+        }
+    },
+    "correlator": [
+        {
+            "class": "Correlation",
+            "isotopeID_0": 13,
+            "element_0": "Y",
+            "param_index_0": 0,
+            "isotopeID_1": 15,
+            "element_1": "RAND",
+            "param_index_1": 1,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.5310906513771201
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 24,
+            "element_0": "SPIN",
+            "param_index_0": 1,
+            "isotopeID_1": 24,
+            "element_1": "SPIN",
+            "param_index_1": 3,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": -0.29932326721692903
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 24,
+            "element_0": "SPIN",
+            "param_index_0": 0,
+            "isotopeID_1": 24,
+            "element_1": "SPIN",
+            "param_index_1": 4,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": -0.09498132147097782
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 21,
+            "element_0": "SPIN",
+            "param_index_0": 4,
+            "isotopeID_1": 26,
+            "element_1": "MINX",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 1,
+            "strength": 0.6099887614099697
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 25,
+            "element_0": "SPIN",
+            "param_index_0": 3,
+            "isotopeID_1": 27,
+            "element_1": "POWER",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.7560872619790409
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 17,
+            "element_0": "MINX",
+            "param_index_0": 0,
+            "isotopeID_1": 25,
+            "element_1": "SPIN",
+            "param_index_1": 2,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.6256463269862977
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 14,
+            "element_0": "SPIN",
+            "param_index_0": 0,
+            "isotopeID_1": 25,
+            "element_1": "SPIN",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": -0.8694571085418792
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 21,
+            "element_0": "SPIN",
+            "param_index_0": 0,
+            "isotopeID_1": 28,
+            "element_1": "ARCFAN",
+            "param_index_1": 1,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.9705459571668844
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 18,
+            "element_0": "RAND",
+            "param_index_0": 0,
+            "isotopeID_1": 11,
+            "element_1": "Y",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": -0.7988296626039806
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 8,
+            "element_0": "X",
+            "param_index_0": 0,
+            "isotopeID_1": 22,
+            "element_1": "MINX",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.2691114793143692
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 9,
+            "element_0": "X",
+            "param_index_0": 0,
+            "isotopeID_1": 28,
+            "element_1": "ARCFAN",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.4761541813376535
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 25,
+            "element_0": "SPIN",
+            "param_index_0": 1,
+            "isotopeID_1": 21,
+            "element_1": "SPIN",
+            "param_index_1": 1,
+            "relation_c": 0,
+            "relation_r": 1,
+            "strength": -0.7407580243843153
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 14,
+            "element_0": "SPIN",
+            "param_index_0": 3,
+            "isotopeID_1": 21,
+            "element_1": "SPIN",
+            "param_index_1": 2,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": -0.8899463050558665
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 14,
+            "element_0": "SPIN",
+            "param_index_0": 1,
+            "isotopeID_1": 21,
+            "element_1": "SPIN",
+            "param_index_1": 3,
+            "relation_c": 1,
+            "relation_r": 0,
+            "strength": 0.018796012502521497
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 25,
+            "element_0": "SPIN",
+            "param_index_0": 4,
+            "isotopeID_1": 16,
+            "element_1": "POWER",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.3966157992142687
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 14,
+            "element_0": "SPIN",
+            "param_index_0": 2,
+            "isotopeID_1": 12,
+            "element_1": "Y",
+            "param_index_1": 0,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": -0.21797271002472285
+        },
+        {
+            "class": "Correlation",
+            "isotopeID_0": 18,
+            "element_0": "RAND",
+            "param_index_0": 1,
+            "isotopeID_1": 14,
+            "element_1": "SPIN",
+            "param_index_1": 4,
+            "relation_c": 0,
+            "relation_r": 0,
+            "strength": 0.711820027277499
+        }
+    ],
+    "calmer": {
+        "class": "Calmer",
+        "hue_dist": [
+            0,
+            0,
+            1,
+            0.9470659890066808,
+            0
+        ],
+        "sat_dist": [
+            0,
+            0,
+            1,
+            0.45097489180689404,
+            0.08
+        ],
+        "val_dist": [
+            0,
+            0,
+            1,
+            0.9768047479055135,
+            0.08
+        ],
+        "pal_dist": [
+            0,
+            0.408699525279819,
+            2,
+            0.9284865918645119,
+            6.555036020598201e-06
+        ],
+        "gradience_dd": [
+            [
+                0,
+                0.7316874729203708,
+                1,
+                0.2482715544936812,
+                0.09055434113968051
+            ],
+            0.004502064502175456,
+            0.6471134726079718,
+            [
+                0,
+                0.6044419042003683,
+                1,
+                0.4177231712731786,
+                0.0938853998060638
+            ],
+            0.0001274816905179702,
+            0.00011049469590747378
+        ],
+        "unarm_dist": [
+            0,
+            0.42322736503702474,
+            1,
+            0.05046830415514536,
+            0.3520781501800959
+        ],
+        "unaim_dist": [
+            1,
+            2.6853018858371485,
+            20,
+            0.09541668204513187,
+            0.08299026394778294
+        ]
+    }
+}
