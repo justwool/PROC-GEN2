@@ -29,6 +29,18 @@ function repoFileUrl(relPath) {
   return `/py/${relPath}`;
 }
 
+function ensureDir(pyodide, path) {
+  const parts = path.split('/').slice(0, -1);
+  let current = '';
+  for (const p of parts) {
+    if (!p) continue;
+    current += '/' + p;
+    try {
+      pyodide.FS.mkdir(current);
+    } catch {}
+  }
+}
+
 export async function bootPyodide({ onWrite }) {
   stdinQueue = [];
   stdinResolvers = [];
@@ -111,6 +123,7 @@ export async function loadProjectFiles() {
     const res = await fetch(repoFileUrl(path));
     if (!res.ok) throw new Error(`Failed to load ${path}`);
     const fsPath = `/${path}`;
+    ensureDir(pyodide, fsPath);
     if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
       writeText(pyodide, fsPath, await res.text());
     } else {
