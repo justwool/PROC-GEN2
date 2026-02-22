@@ -25,14 +25,18 @@ async function loadScript(src) {
 }
 
 function repoFileUrl(relPath) {
-  return `/@fs${__REPO_ROOT__}/${relPath}`;
+  if (relPath.startsWith('data/')) return `/${relPath}`;
+  return `/py/${relPath}`;
 }
+
 
 export async function bootPyodide({ onWrite }) {
   stdinQueue = [];
   stdinResolvers = [];
   await loadScript(PYODIDE_URL);
-  pyodide = await globalThis.loadPyodide({});
+  pyodide = await globalThis.loadPyodide({
+    indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/',
+  });
 
   if (typeof SharedArrayBuffer !== 'undefined' && pyodide.setInterruptBuffer) {
     interruptBuffer = new Uint8Array(new SharedArrayBuffer(1));
@@ -75,6 +79,18 @@ def input(prompt=""):
 builtins.input = input
 `);
 
+  await pyodide.runPythonAsync(`
+import os, errno
+try:
+    st = os.stat("/data")
+    # if it exists but is not a dir, remove it
+    if not os.path.isdir("/data"):
+        os.remove("/data")
+        os.mkdir("/data")
+except FileNotFoundError:
+    os.mkdir("/data")
+`);
+
   await loadProjectFiles();
   return pyodide;
 }
@@ -105,13 +121,22 @@ art.main()
 
 export async function loadProjectFiles() {
   for (const path of REQUIRED_FILES) {
-    const res = await fetch(repoFileUrl(path));
-    if (!res.ok) throw new Error(`Failed to load ${path}`);
+    const url = repoFileUrl(path);
     const fsPath = `/${path}`;
-    if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
-      writeText(pyodide, fsPath, await res.text());
-    } else {
-      writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+    try {
+      const res = await fetch(url);
+      if (!res.ok) {
+        throw new Error(`Failed to fetch ${path} (${res.status})`);
+      }
+
+      if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
+        writeText(pyodide, fsPath, await res.text());
+      } else {
+        writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+      }
+    } catch (e) {
+      const detail = [e?.name, e?.message, e?.errno].filter((v) => v !== undefined).join(' | ');
+      throw new Error(`loadProjectFiles failed on ${path} -> ${fsPath}: ${detail || e}`);
     }
   }
 }

@@ -21,13 +21,23 @@ let gallery = [];
 let selectedIndex = -1;
 
 async function init() {
-  terminal.writeln('Booting Pyodide runtime...');
-  await bootPyodide({ onWrite: (txt) => terminal.write(txt.replace(/\n/g, '\r\n')) });
-  pyReady = true;
-  baselineSnapshot = snapshotFS('/');
-  terminal.writeln('Ready. Type help for commands.');
-  terminal.setPrompt(commandPrompt);
-  terminal.printPrompt();
+  try {
+    terminal.writeln('Booting Pyodide runtime...');
+    await bootPyodide({ onWrite: (txt) => terminal.write(txt.replace(/\n/g, '\r\n')) });
+    pyReady = true;
+    baselineSnapshot = snapshotFS('/');
+    terminal.writeln('Ready. Type help for commands.');
+    terminal.setPrompt(commandPrompt);
+    terminal.printPrompt();
+  } catch (err) {
+    pyReady = false;
+    const msg =
+      err?.stack ||
+      err?.message ||
+      (typeof err === 'object' ? JSON.stringify(err, null, 2) : String(err));
+
+    terminal.writeln(`\r\n[boot error] ${msg}`);
+  }
 }
 
 async function handleLine(line) {
