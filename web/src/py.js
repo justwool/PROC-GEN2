@@ -25,14 +25,29 @@ async function loadScript(src) {
 }
 
 function repoFileUrl(relPath) {
-  return `/@fs${__REPO_ROOT__}/${relPath}`;
+  if (relPath.startsWith('data/')) return `/${relPath}`;
+  return `/py/${relPath}`;
+}
+
+function ensureDir(pyodide, path) {
+  const parts = path.split('/').slice(0, -1);
+  let current = '';
+  for (const p of parts) {
+    if (!p) continue;
+    current += '/' + p;
+    try {
+      pyodide.FS.mkdir(current);
+    } catch {}
+  }
 }
 
 export async function bootPyodide({ onWrite }) {
   stdinQueue = [];
   stdinResolvers = [];
   await loadScript(PYODIDE_URL);
-  pyodide = await globalThis.loadPyodide({});
+  pyodide = await globalThis.loadPyodide({
+    indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/',
+  });
 
   if (typeof SharedArrayBuffer !== 'undefined' && pyodide.setInterruptBuffer) {
     interruptBuffer = new Uint8Array(new SharedArrayBuffer(1));
@@ -108,6 +123,7 @@ export async function loadProjectFiles() {
     const res = await fetch(repoFileUrl(path));
     if (!res.ok) throw new Error(`Failed to load ${path}`);
     const fsPath = `/${path}`;
+    ensureDir(pyodide, fsPath);
     if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
       writeText(pyodide, fsPath, await res.text());
     } else {
