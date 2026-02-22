@@ -13,10 +13,8 @@ function createShaderMaterial(painting, index) {
   const borderColors = painting.borders.slice(0, 6).map((b) => colorArrayToVector3(b.color));
   while (borderColors.length < 6) borderColors.push(new THREE.Vector3(0, 0, 0));
 
-  const borderData = painting.borders
-    .slice(0, 6)
-    .map((b) => new THREE.Vector4(b.height, b.amplitude, b.frequency, b.exponent));
-  while (borderData.length < 6) borderData.push(new THREE.Vector4(0, 0, 1, 1));
+  const borderData = painting.borders.slice(0, 6).map((b) => [b.height, b.amplitude, b.frequency, b.exponent]);
+  while (borderData.length < 6) borderData.push([0, 0, 1, 1]);
 
   return new THREE.ShaderMaterial({
     uniforms: {
