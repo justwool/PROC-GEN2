@@ -1,4 +1,4 @@
-import { REQUIRED_FILES, snapshotDir, writeBinary, writeText } from './fs.js';
+import { snapshotDir, writeBinary, writeText } from './fs.js';
 
 const PYODIDE_URL = 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';
 
@@ -23,12 +23,6 @@ async function loadScript(src) {
     document.head.appendChild(script);
   });
 }
-
-function repoFileUrl(relPath) {
-  if (relPath.startsWith('data/')) return `/${relPath}`;
-  return `/py/${relPath}`;
-}
-
 
 export async function bootPyodide({ onWrite }) {
   stdinQueue = [];
@@ -119,24 +113,43 @@ art.main()
 `);
 }
 
+function isTextFile(path) {
+  return /\.(txt|py|json|gitkeep)$/i.test(path);
+}
+
 export async function loadProjectFiles() {
-  for (const path of REQUIRED_FILES) {
-    const url = repoFileUrl(path);
-    const fsPath = `/${path}`;
+  const manifestRes = await fetch('/manifest.json');
+  if (!manifestRes.ok) {
+    throw new Error(`fetch /manifest.json -> ${manifestRes.status}`);
+  }
+
+  const manifest = await manifestRes.json();
+  const pyFiles = Array.isArray(manifest?.py) ? manifest.py : [];
+  const dataFiles = Array.isArray(manifest?.data) ? manifest.data : [];
+
+  for (const name of pyFiles) {
+    const url = `/py/${name}`;
+    const fsPath = `/${name}`;
     try {
       const res = await fetch(url);
-      if (!res.ok) {
-        throw new Error(`Failed to fetch ${path} (${res.status})`);
-      }
-
-      if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
-        writeText(pyodide, fsPath, await res.text());
-      } else {
-        writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
-      }
+      if (!res.ok) throw new Error(`fetch ${url} -> ${res.status} (write ${fsPath})`);
+      if (isTextFile(name)) writeText(pyodide, fsPath, await res.text());
+      else writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
     } catch (e) {
-      const detail = [e?.name, e?.message, e?.errno].filter((v) => v !== undefined).join(' | ');
-      throw new Error(`loadProjectFiles failed on ${path} -> ${fsPath}: ${detail || e}`);
+      throw new Error(`loadProjectFiles failed on ${name} -> ${fsPath}: ${e?.message || e}`);
+    }
+  }
+
+  for (const name of dataFiles) {
+    const url = `/data/${name}`;
+    const fsPath = `/data/${name}`;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`fetch ${url} -> ${res.status} (write ${fsPath})`);
+      if (isTextFile(name)) writeText(pyodide, fsPath, await res.text());
+      else writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+    } catch (e) {
+      throw new Error(`loadProjectFiles failed on data/${name} -> ${fsPath}: ${e?.message || e}`);
     }
   }
 }

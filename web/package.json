@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/sync-assets.mjs",
+    "predev": "node scripts/sync-assets.mjs && node scripts/generate-manifest.mjs",
     "dev": "vite",
-    "prebuild": "node scripts/sync-assets.mjs",
+    "prebuild": "node scripts/sync-assets.mjs && node scripts/generate-manifest.mjs",
     "build": "vite build",
     "preview": "vite preview"
   },
