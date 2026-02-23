@@ -29,17 +29,6 @@ function repoFileUrl(relPath) {
   return `/py/${relPath}`;
 }
 
-function ensureDir(pyodide, path) {
-  const parts = path.split('/').slice(0, -1);
-  let current = '';
-  for (const p of parts) {
-    if (!p) continue;
-    current += '/' + p;
-    try {
-      pyodide.FS.mkdir(current);
-    } catch {}
-  }
-}
 
 export async function bootPyodide({ onWrite }) {
   stdinQueue = [];
@@ -90,6 +79,18 @@ def input(prompt=""):
 builtins.input = input
 `);
 
+  await pyodide.runPythonAsync(`
+import os, errno
+try:
+    st = os.stat("/data")
+    # if it exists but is not a dir, remove it
+    if not os.path.isdir("/data"):
+        os.remove("/data")
+        os.mkdir("/data")
+except FileNotFoundError:
+    os.mkdir("/data")
+`);
+
   await loadProjectFiles();
   return pyodide;
 }
@@ -120,14 +121,22 @@ art.main()
 
 export async function loadProjectFiles() {
   for (const path of REQUIRED_FILES) {
-    const res = await fetch(repoFileUrl(path));
-    if (!res.ok) throw new Error(`Failed to load ${path}`);
+    const url = repoFileUrl(path);
     const fsPath = `/${path}`;
-    ensureDir(pyodide, fsPath);
-    if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
-      writeText(pyodide, fsPath, await res.text());
-    } else {
-      writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+    try {
+      const res = await fetch(url);
+      if (!res.ok) {
+        throw new Error(`Failed to fetch ${path} (${res.status})`);
+      }
+
+      if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
+        writeText(pyodide, fsPath, await res.text());
+      } else {
+        writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+      }
+    } catch (e) {
+      const detail = [e?.name, e?.message, e?.errno].filter((v) => v !== undefined).join(' | ');
+      throw new Error(`loadProjectFiles failed on ${path} -> ${fsPath}: ${detail || e}`);
     }
   }
 }
