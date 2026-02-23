@@ -1,0 +1,2852 @@
+{
+    "0": {
+        "class": "Isotope",
+        "ID": 0,
+        "element": "ROOT_MAIN",
+        "infexes": [],
+        "freedom": 0.5743745599034813,
+        "max_count": 1,
+        "options": [
+            [
+                109
+            ],
+            [
+                109
+            ]
+        ],
+        "defaults": [
+            [
+                109
+            ]
+        ]
+    },
+    "1": {
+        "class": "Isotope",
+        "ID": 1,
+        "element": "ROOT_HUE",
+        "infexes": [],
+        "freedom": 0.09769320677169707,
+        "max_count": 1,
+        "options": [
+            [
+                127
+            ],
+            [
+                111
+            ]
+        ],
+        "defaults": [
+            [
+                111
+            ]
+        ]
+    },
+    "2": {
+        "class": "Isotope",
+        "ID": 2,
+        "element": "ROOT_SAT",
+        "infexes": [],
+        "freedom": 0.4072215255027559,
+        "max_count": 1,
+        "options": [
+            [
+                110
+            ],
+            [
+                114
+            ],
+            [
+                113
+            ],
+            [
+                111
+            ]
+        ],
+        "defaults": [
+            [
+                111
+            ]
+        ]
+    },
+    "3": {
+        "class": "Isotope",
+        "ID": 3,
+        "element": "ROOT_VAL",
+        "infexes": [],
+        "freedom": 0.1413879494045804,
+        "max_count": 1,
+        "options": [
+            [
+                108
+            ],
+            [
+                109
+            ]
+        ],
+        "defaults": [
+            [
+                108
+            ]
+        ]
+    },
+    "4": {
+        "class": "Isotope",
+        "ID": 4,
+        "element": "ROOT_PAL",
+        "infexes": [],
+        "freedom": 0.2604173424336342,
+        "max_count": 1,
+        "options": [
+            [
+                125
+            ],
+            [
+                128
+            ]
+        ],
+        "defaults": [
+            [
+                128
+            ]
+        ]
+    },
+    "5": {
+        "class": "Isotope",
+        "ID": 5,
+        "element": "ROOT_GRAD",
+        "infexes": [],
+        "freedom": 0.8595901961671857,
+        "max_count": 1,
+        "options": [
+            [
+                124
+            ],
+            [
+                112
+            ]
+        ],
+        "defaults": [
+            [
+                112
+            ]
+        ]
+    },
+    "6": {
+        "class": "Isotope",
+        "ID": 6,
+        "element": "ROOT_TARGET",
+        "infexes": [],
+        "freedom": 0.2446721283693435,
+        "max_count": 1,
+        "options": [
+            [
+                121
+            ],
+            [
+                109
+            ]
+        ],
+        "defaults": [
+            [
+                109
+            ]
+        ]
+    },
+    "7": {
+        "class": "Isotope",
+        "ID": 7,
+        "element": "ROOT_AIM",
+        "infexes": [],
+        "freedom": 0.43390133877838033,
+        "max_count": 1,
+        "options": [
+            [
+                128
+            ],
+            [
+                112
+            ]
+        ],
+        "defaults": [
+            [
+                128
+            ]
+        ]
+    },
+    "8": {
+        "class": "Isotope",
+        "ID": 8,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 3,
+        "options": [],
+        "defaults": []
+    },
+    "9": {
+        "class": "Isotope",
+        "ID": 9,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 6,
+        "options": [],
+        "defaults": []
+    },
+    "10": {
+        "class": "Isotope",
+        "ID": 10,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 73,
+        "options": [],
+        "defaults": []
+    },
+    "11": {
+        "class": "Isotope",
+        "ID": 11,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 4,
+        "options": [],
+        "defaults": []
+    },
+    "12": {
+        "class": "Isotope",
+        "ID": 12,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 23,
+        "options": [],
+        "defaults": []
+    },
+    "13": {
+        "class": "Isotope",
+        "ID": 13,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 68,
+        "options": [],
+        "defaults": []
+    },
+    "14": {
+        "class": "Isotope",
+        "ID": 14,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 13,
+        "options": [],
+        "defaults": []
+    },
+    "15": {
+        "class": "Isotope",
+        "ID": 15,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 2,
+        "options": [],
+        "defaults": []
+    },
+    "16": {
+        "class": "Isotope",
+        "ID": 16,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 10,
+        "options": [],
+        "defaults": []
+    },
+    "17": {
+        "class": "Isotope",
+        "ID": 17,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 1,
+        "options": [],
+        "defaults": []
+    },
+    "18": {
+        "class": "Isotope",
+        "ID": 18,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 50,
+        "options": [],
+        "defaults": []
+    },
+    "19": {
+        "class": "Isotope",
+        "ID": 19,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 24,
+        "options": [],
+        "defaults": []
+    },
+    "20": {
+        "class": "Isotope",
+        "ID": 20,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 1,
+        "options": [],
+        "defaults": []
+    },
+    "21": {
+        "class": "Isotope",
+        "ID": 21,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 18,
+        "options": [],
+        "defaults": []
+    },
+    "22": {
+        "class": "Isotope",
+        "ID": 22,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 8,
+        "options": [],
+        "defaults": []
+    },
+    "23": {
+        "class": "Isotope",
+        "ID": 23,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 15,
+        "options": [],
+        "defaults": []
+    },
+    "24": {
+        "class": "Isotope",
+        "ID": 24,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 5,
+        "options": [],
+        "defaults": []
+    },
+    "25": {
+        "class": "Isotope",
+        "ID": 25,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [],
+        "defaults": []
+    },
+    "26": {
+        "class": "Isotope",
+        "ID": 26,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 21,
+        "options": [],
+        "defaults": []
+    },
+    "27": {
+        "class": "Isotope",
+        "ID": 27,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 83,
+        "options": [],
+        "defaults": []
+    },
+    "28": {
+        "class": "Isotope",
+        "ID": 28,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 7,
+        "options": [],
+        "defaults": []
+    },
+    "29": {
+        "class": "Isotope",
+        "ID": 29,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 6,
+        "options": [],
+        "defaults": []
+    },
+    "30": {
+        "class": "Isotope",
+        "ID": 30,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 80,
+        "options": [],
+        "defaults": []
+    },
+    "31": {
+        "class": "Isotope",
+        "ID": 31,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 16,
+        "options": [],
+        "defaults": []
+    },
+    "32": {
+        "class": "Isotope",
+        "ID": 32,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 12,
+        "options": [],
+        "defaults": []
+    },
+    "33": {
+        "class": "Isotope",
+        "ID": 33,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 1,
+        "options": [],
+        "defaults": []
+    },
+    "34": {
+        "class": "Isotope",
+        "ID": 34,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 1,
+        "options": [],
+        "defaults": []
+    },
+    "35": {
+        "class": "Isotope",
+        "ID": 35,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 97,
+        "options": [],
+        "defaults": []
+    },
+    "36": {
+        "class": "Isotope",
+        "ID": 36,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [],
+        "defaults": []
+    },
+    "37": {
+        "class": "Isotope",
+        "ID": 37,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 36,
+        "options": [],
+        "defaults": []
+    },
+    "38": {
+        "class": "Isotope",
+        "ID": 38,
+        "element": "X",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [],
+        "defaults": []
+    },
+    "39": {
+        "class": "Isotope",
+        "ID": 39,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 22,
+        "options": [],
+        "defaults": []
+    },
+    "40": {
+        "class": "Isotope",
+        "ID": 40,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 38,
+        "options": [],
+        "defaults": []
+    },
+    "41": {
+        "class": "Isotope",
+        "ID": 41,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 5,
+        "options": [],
+        "defaults": []
+    },
+    "42": {
+        "class": "Isotope",
+        "ID": 42,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 15,
+        "options": [],
+        "defaults": []
+    },
+    "43": {
+        "class": "Isotope",
+        "ID": 43,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 47,
+        "options": [],
+        "defaults": []
+    },
+    "44": {
+        "class": "Isotope",
+        "ID": 44,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [],
+        "defaults": []
+    },
+    "45": {
+        "class": "Isotope",
+        "ID": 45,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 23,
+        "options": [],
+        "defaults": []
+    },
+    "46": {
+        "class": "Isotope",
+        "ID": 46,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 33,
+        "options": [],
+        "defaults": []
+    },
+    "47": {
+        "class": "Isotope",
+        "ID": 47,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 5,
+        "options": [],
+        "defaults": []
+    },
+    "48": {
+        "class": "Isotope",
+        "ID": 48,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 16,
+        "options": [],
+        "defaults": []
+    },
+    "49": {
+        "class": "Isotope",
+        "ID": 49,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 24,
+        "options": [],
+        "defaults": []
+    },
+    "50": {
+        "class": "Isotope",
+        "ID": 50,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 23,
+        "options": [],
+        "defaults": []
+    },
+    "51": {
+        "class": "Isotope",
+        "ID": 51,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 76,
+        "options": [],
+        "defaults": []
+    },
+    "52": {
+        "class": "Isotope",
+        "ID": 52,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 149,
+        "options": [],
+        "defaults": []
+    },
+    "53": {
+        "class": "Isotope",
+        "ID": 53,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 29,
+        "options": [],
+        "defaults": []
+    },
+    "54": {
+        "class": "Isotope",
+        "ID": 54,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 4,
+        "options": [],
+        "defaults": []
+    },
+    "55": {
+        "class": "Isotope",
+        "ID": 55,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 6,
+        "options": [],
+        "defaults": []
+    },
+    "56": {
+        "class": "Isotope",
+        "ID": 56,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 23,
+        "options": [],
+        "defaults": []
+    },
+    "57": {
+        "class": "Isotope",
+        "ID": 57,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 19,
+        "options": [],
+        "defaults": []
+    },
+    "58": {
+        "class": "Isotope",
+        "ID": 58,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [],
+        "defaults": []
+    },
+    "59": {
+        "class": "Isotope",
+        "ID": 59,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 38,
+        "options": [],
+        "defaults": []
+    },
+    "60": {
+        "class": "Isotope",
+        "ID": 60,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 42,
+        "options": [],
+        "defaults": []
+    },
+    "61": {
+        "class": "Isotope",
+        "ID": 61,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 30,
+        "options": [],
+        "defaults": []
+    },
+    "62": {
+        "class": "Isotope",
+        "ID": 62,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 30,
+        "options": [],
+        "defaults": []
+    },
+    "63": {
+        "class": "Isotope",
+        "ID": 63,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 10,
+        "options": [],
+        "defaults": []
+    },
+    "64": {
+        "class": "Isotope",
+        "ID": 64,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 122,
+        "options": [],
+        "defaults": []
+    },
+    "65": {
+        "class": "Isotope",
+        "ID": 65,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 194,
+        "options": [],
+        "defaults": []
+    },
+    "66": {
+        "class": "Isotope",
+        "ID": 66,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 14,
+        "options": [],
+        "defaults": []
+    },
+    "67": {
+        "class": "Isotope",
+        "ID": 67,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 30,
+        "options": [],
+        "defaults": []
+    },
+    "68": {
+        "class": "Isotope",
+        "ID": 68,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 75,
+        "options": [],
+        "defaults": []
+    },
+    "69": {
+        "class": "Isotope",
+        "ID": 69,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 35,
+        "options": [],
+        "defaults": []
+    },
+    "70": {
+        "class": "Isotope",
+        "ID": 70,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [],
+        "defaults": []
+    },
+    "71": {
+        "class": "Isotope",
+        "ID": 71,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 26,
+        "options": [],
+        "defaults": []
+    },
+    "72": {
+        "class": "Isotope",
+        "ID": 72,
+        "element": "Y",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 27,
+        "options": [],
+        "defaults": []
+    },
+    "73": {
+        "class": "Isotope",
+        "ID": 73,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 7,
+        "options": [
+            [
+                9
+            ]
+        ],
+        "defaults": [
+            [
+                9
+            ]
+        ]
+    },
+    "74": {
+        "class": "Isotope",
+        "ID": 74,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 3,
+        "options": [
+            [
+                22,
+                54,
+                109,
+                34,
+                9
+            ]
+        ],
+        "defaults": [
+            [
+                22,
+                54,
+                109,
+                34,
+                9
+            ]
+        ]
+    },
+    "75": {
+        "class": "Isotope",
+        "ID": 75,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 37,
+        "options": [
+            [
+                35
+            ]
+        ],
+        "defaults": [
+            [
+                35
+            ]
+        ]
+    },
+    "76": {
+        "class": "Isotope",
+        "ID": 76,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 8,
+        "options": [
+            [
+                34
+            ]
+        ],
+        "defaults": [
+            [
+                34
+            ]
+        ]
+    },
+    "77": {
+        "class": "Isotope",
+        "ID": 77,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 24,
+        "options": [
+            [
+                80
+            ]
+        ],
+        "defaults": [
+            [
+                80
+            ]
+        ]
+    },
+    "78": {
+        "class": "Isotope",
+        "ID": 78,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 5,
+        "options": [
+            [
+                19
+            ]
+        ],
+        "defaults": [
+            [
+                19
+            ]
+        ]
+    },
+    "79": {
+        "class": "Isotope",
+        "ID": 79,
+        "element": "RAND",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 127,
+        "options": [
+            [
+                35
+            ]
+        ],
+        "defaults": [
+            [
+                35
+            ]
+        ]
+    },
+    "80": {
+        "class": "Isotope",
+        "ID": 80,
+        "element": "POW",
+        "infexes": [],
+        "freedom": 0.4180290837167433,
+        "max_count": 23,
+        "options": [
+            [
+                29
+            ],
+            [
+                22
+            ]
+        ],
+        "defaults": [
+            [
+                29
+            ],
+            [
+                22
+            ]
+        ]
+    },
+    "81": {
+        "class": "Isotope",
+        "ID": 81,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.2505050555786204,
+        "max_count": 1,
+        "options": [
+            [
+                23
+            ],
+            [
+                81
+            ],
+            [
+                11
+            ],
+            [
+                80
+            ]
+        ],
+        "defaults": [
+            [
+                11
+            ]
+        ]
+    },
+    "82": {
+        "class": "Isotope",
+        "ID": 82,
+        "element": "RAND",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 5,
+        "options": [
+            [
+                12
+            ]
+        ],
+        "defaults": [
+            [
+                12
+            ]
+        ]
+    },
+    "83": {
+        "class": "Isotope",
+        "ID": 83,
+        "element": "MINX",
+        "infexes": [
+            2,
+            4
+        ],
+        "freedom": 0.41299785272082834,
+        "max_count": 8,
+        "options": [
+            [
+                116,
+                116,
+                24,
+                91
+            ],
+            [
+                90,
+                112
+            ]
+        ],
+        "defaults": [
+            [
+                90,
+                112
+            ]
+        ]
+    },
+    "84": {
+        "class": "Isotope",
+        "ID": 84,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 6,
+        "options": [
+            [
+                8,
+                74
+            ]
+        ],
+        "defaults": [
+            [
+                8,
+                74
+            ]
+        ]
+    },
+    "85": {
+        "class": "Isotope",
+        "ID": 85,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 29,
+        "options": [
+            [
+                38,
+                45,
+                18,
+                31,
+                146
+            ]
+        ],
+        "defaults": [
+            [
+                38,
+                45,
+                18,
+                31,
+                146
+            ]
+        ]
+    },
+    "86": {
+        "class": "Isotope",
+        "ID": 86,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0.4089356882036423,
+        "max_count": 47,
+        "options": [
+            [
+                81,
+                53
+            ],
+            [
+                18,
+                44
+            ]
+        ],
+        "defaults": [
+            [
+                18,
+                44
+            ]
+        ]
+    },
+    "87": {
+        "class": "Isotope",
+        "ID": 87,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.09589588190549592,
+        "max_count": 22,
+        "options": [
+            [
+                88
+            ],
+            [
+                10
+            ],
+            [
+                8
+            ],
+            [
+                16
+            ],
+            [
+                75
+            ],
+            [
+                76
+            ],
+            [
+                86
+            ],
+            [
+                34
+            ],
+            [
+                38
+            ],
+            [
+                25
+            ],
+            [
+                86
+            ],
+            [
+                20
+            ],
+            [
+                33
+            ],
+            [
+                85
+            ],
+            [
+                73
+            ],
+            [
+                27
+            ],
+            [
+                80
+            ]
+        ],
+        "defaults": [
+            [
+                34
+            ]
+        ]
+    },
+    "88": {
+        "class": "Isotope",
+        "ID": 88,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 6,
+        "options": [
+            [
+                36
+            ]
+        ],
+        "defaults": [
+            [
+                36
+            ]
+        ]
+    },
+    "89": {
+        "class": "Isotope",
+        "ID": 89,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [
+            [
+                95
+            ]
+        ],
+        "defaults": [
+            [
+                95
+            ]
+        ]
+    },
+    "90": {
+        "class": "Isotope",
+        "ID": 90,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 6,
+        "options": [
+            [
+                23,
+                104
+            ]
+        ],
+        "defaults": [
+            [
+                23,
+                104
+            ]
+        ]
+    },
+    "91": {
+        "class": "Isotope",
+        "ID": 91,
+        "element": "SPIN",
+        "infexes": [],
+        "freedom": 0.35150809776323333,
+        "max_count": 22,
+        "options": [
+            [
+                19,
+                115,
+                86
+            ],
+            [
+                90,
+                59,
+                128
+            ]
+        ],
+        "defaults": [
+            [
+                90,
+                59,
+                128
+            ]
+        ]
+    },
+    "92": {
+        "class": "Isotope",
+        "ID": 92,
+        "element": "ARCFAN",
+        "infexes": [],
+        "freedom": 0.2841463779828546,
+        "max_count": 48,
+        "options": [
+            [
+                31,
+                75
+            ],
+            [
+                121,
+                85
+            ],
+            [
+                26,
+                102
+            ]
+        ],
+        "defaults": [
+            [
+                31,
+                75
+            ]
+        ]
+    },
+    "93": {
+        "class": "Isotope",
+        "ID": 93,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0.08118312930899485,
+        "max_count": 35,
+        "options": [
+            [
+                16,
+                55,
+                92,
+                54,
+                32
+            ],
+            [
+                16,
+                55,
+                10,
+                14,
+                142
+            ]
+        ],
+        "defaults": [
+            [
+                16,
+                55,
+                10,
+                14,
+                142
+            ]
+        ]
+    },
+    "94": {
+        "class": "Isotope",
+        "ID": 94,
+        "element": "RAND",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 3,
+        "options": [
+            [
+                8
+            ]
+        ],
+        "defaults": [
+            [
+                8
+            ]
+        ]
+    },
+    "95": {
+        "class": "Isotope",
+        "ID": 95,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [
+            [
+                30,
+                23
+            ]
+        ],
+        "defaults": [
+            [
+                30,
+                23
+            ]
+        ]
+    },
+    "96": {
+        "class": "Isotope",
+        "ID": 96,
+        "element": "ARCFAN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 22,
+        "options": [
+            [
+                90,
+                15
+            ]
+        ],
+        "defaults": [
+            [
+                90,
+                15
+            ]
+        ]
+    },
+    "97": {
+        "class": "Isotope",
+        "ID": 97,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 12,
+        "options": [
+            [
+                74
+            ]
+        ],
+        "defaults": [
+            [
+                74
+            ]
+        ]
+    },
+    "98": {
+        "class": "Isotope",
+        "ID": 98,
+        "element": "SPIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 12,
+        "options": [
+            [
+                96,
+                69,
+                146
+            ]
+        ],
+        "defaults": [
+            [
+                96,
+                69,
+                146
+            ]
+        ]
+    },
+    "99": {
+        "class": "Isotope",
+        "ID": 99,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 11,
+        "options": [
+            [
+                69
+            ]
+        ],
+        "defaults": [
+            [
+                69
+            ]
+        ]
+    },
+    "100": {
+        "class": "Isotope",
+        "ID": 100,
+        "element": "ARCFAN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 41,
+        "options": [
+            [
+                105,
+                49
+            ]
+        ],
+        "defaults": [
+            [
+                105,
+                49
+            ]
+        ]
+    },
+    "101": {
+        "class": "Isotope",
+        "ID": 101,
+        "element": "POW",
+        "infexes": [],
+        "freedom": 0.37999823105761465,
+        "max_count": 1,
+        "options": [
+            [
+                58
+            ],
+            [
+                42
+            ],
+            [
+                41
+            ],
+            [
+                104
+            ],
+            [
+                50
+            ],
+            [
+                65
+            ],
+            [
+                98
+            ]
+        ],
+        "defaults": [
+            [
+                58
+            ],
+            [
+                42
+            ],
+            [
+                41
+            ],
+            [
+                104
+            ],
+            [
+                50
+            ],
+            [
+                65
+            ],
+            [
+                98
+            ]
+        ]
+    },
+    "102": {
+        "class": "Isotope",
+        "ID": 102,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 1,
+        "options": [
+            [
+                48
+            ]
+        ],
+        "defaults": [
+            [
+                48
+            ]
+        ]
+    },
+    "103": {
+        "class": "Isotope",
+        "ID": 103,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.9803241433258354,
+        "max_count": 22,
+        "options": [
+            [
+                103
+            ],
+            [
+                64
+            ]
+        ],
+        "defaults": [
+            [
+                64
+            ]
+        ]
+    },
+    "104": {
+        "class": "Isotope",
+        "ID": 104,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.19135664327809987,
+        "max_count": 4,
+        "options": [
+            [
+                100
+            ],
+            [
+                72
+            ]
+        ],
+        "defaults": [
+            [
+                100
+            ],
+            [
+                72
+            ]
+        ]
+    },
+    "105": {
+        "class": "Isotope",
+        "ID": 105,
+        "element": "MINX",
+        "infexes": [
+            2,
+            3
+        ],
+        "freedom": 0,
+        "max_count": 3,
+        "options": [
+            [
+                59,
+                33,
+                94
+            ]
+        ],
+        "defaults": [
+            [
+                59,
+                33,
+                94
+            ]
+        ]
+    },
+    "106": {
+        "class": "Isotope",
+        "ID": 106,
+        "element": "POW",
+        "infexes": [],
+        "freedom": 0.6477248120791629,
+        "max_count": 35,
+        "options": [
+            [
+                99
+            ],
+            [
+                45
+            ]
+        ],
+        "defaults": [
+            [
+                99
+            ],
+            [
+                45
+            ]
+        ]
+    },
+    "107": {
+        "class": "Isotope",
+        "ID": 107,
+        "element": "MINX",
+        "infexes": [
+            3,
+            4
+        ],
+        "freedom": 0,
+        "max_count": 27,
+        "options": [
+            [
+                26,
+                63,
+                17,
+                70
+            ]
+        ],
+        "defaults": [
+            [
+                26,
+                63,
+                17,
+                70
+            ]
+        ]
+    },
+    "108": {
+        "class": "Isotope",
+        "ID": 108,
+        "element": "SPIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 23,
+        "options": [
+            [
+                82,
+                42,
+                78
+            ]
+        ],
+        "defaults": [
+            [
+                82,
+                42,
+                78
+            ]
+        ]
+    },
+    "109": {
+        "class": "Isotope",
+        "ID": 109,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 2,
+        "options": [
+            [
+                38,
+                54,
+                96,
+                104,
+                60
+            ]
+        ],
+        "defaults": [
+            [
+                38,
+                54,
+                96,
+                104,
+                60
+            ]
+        ]
+    },
+    "110": {
+        "class": "Isotope",
+        "ID": 110,
+        "element": "ARCFAN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 54,
+        "options": [
+            [
+                38,
+                68
+            ]
+        ],
+        "defaults": [
+            [
+                38,
+                68
+            ]
+        ]
+    },
+    "111": {
+        "class": "Isotope",
+        "ID": 111,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 60,
+        "options": [
+            [
+                56,
+                82
+            ]
+        ],
+        "defaults": [
+            [
+                56,
+                82
+            ]
+        ]
+    },
+    "112": {
+        "class": "Isotope",
+        "ID": 112,
+        "element": "SPIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 36,
+        "options": [
+            [
+                52,
+                90,
+                137
+            ]
+        ],
+        "defaults": [
+            [
+                52,
+                90,
+                137
+            ]
+        ]
+    },
+    "113": {
+        "class": "Isotope",
+        "ID": 113,
+        "element": "AMEAN",
+        "infexes": [
+            2,
+            4
+        ],
+        "freedom": 0.21291632945830719,
+        "max_count": 31,
+        "options": [
+            [
+                89,
+                60,
+                56
+            ],
+            [
+                70,
+                37,
+                44,
+                146
+            ],
+            [
+                147,
+                31,
+                85,
+                52
+            ]
+        ],
+        "defaults": [
+            [
+                89,
+                60,
+                56
+            ]
+        ]
+    },
+    "114": {
+        "class": "Isotope",
+        "ID": 114,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.09504121890668399,
+        "max_count": 38,
+        "options": [
+            [
+                107
+            ],
+            [
+                116
+            ]
+        ],
+        "defaults": [
+            [
+                107
+            ]
+        ]
+    },
+    "115": {
+        "class": "Isotope",
+        "ID": 115,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.33638395324933046,
+        "max_count": 23,
+        "options": [
+            [
+                110
+            ],
+            [
+                124
+            ]
+        ],
+        "defaults": [
+            [
+                110
+            ]
+        ]
+    },
+    "116": {
+        "class": "Isotope",
+        "ID": 116,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.1525904773302815,
+        "max_count": 42,
+        "options": [
+            [
+                126
+            ],
+            [
+                125
+            ],
+            [
+                108
+            ],
+            [
+                119
+            ],
+            [
+                125
+            ],
+            [
+                125
+            ],
+            [
+                109
+            ],
+            [
+                114
+            ],
+            [
+                109
+            ],
+            [
+                128
+            ],
+            [
+                111
+            ],
+            [
+                117
+            ],
+            [
+                120
+            ],
+            [
+                114
+            ],
+            [
+                113
+            ],
+            [
+                115
+            ]
+        ],
+        "defaults": [
+            [
+                111
+            ]
+        ]
+    },
+    "117": {
+        "class": "Isotope",
+        "ID": 117,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0.19268657959389449,
+        "max_count": 82,
+        "options": [
+            [
+                12,
+                52,
+                120,
+                132,
+                101
+            ],
+            [
+                12,
+                52,
+                111,
+                88,
+                10
+            ]
+        ],
+        "defaults": [
+            [
+                12,
+                52,
+                111,
+                88,
+                10
+            ]
+        ]
+    },
+    "118": {
+        "class": "Isotope",
+        "ID": 118,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.62556042564347,
+        "max_count": 38,
+        "options": [
+            [
+                114
+            ],
+            [
+                111
+            ]
+        ],
+        "defaults": [
+            [
+                111
+            ]
+        ]
+    },
+    "119": {
+        "class": "Isotope",
+        "ID": 119,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.10632335470008125,
+        "max_count": 5,
+        "options": [
+            [
+                112
+            ],
+            [
+                123
+            ]
+        ],
+        "defaults": [
+            [
+                112
+            ]
+        ]
+    },
+    "120": {
+        "class": "Isotope",
+        "ID": 120,
+        "element": "ARCFAN",
+        "infexes": [],
+        "freedom": 0.25824128929732193,
+        "max_count": 16,
+        "options": [
+            [
+                114,
+                94
+            ],
+            [
+                128,
+                150
+            ]
+        ],
+        "defaults": [
+            [
+                128,
+                150
+            ]
+        ]
+    },
+    "121": {
+        "class": "Isotope",
+        "ID": 121,
+        "element": "GMEAN",
+        "infexes": [
+            3,
+            6
+        ],
+        "freedom": 0.14488689256074805,
+        "max_count": 38,
+        "options": [
+            [
+                107,
+                46,
+                59,
+                52
+            ],
+            [
+                106,
+                116,
+                107,
+                62,
+                40,
+                129
+            ]
+        ],
+        "defaults": [
+            [
+                107,
+                46,
+                59,
+                52
+            ]
+        ]
+    },
+    "122": {
+        "class": "Isotope",
+        "ID": 122,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0.33780010737005733,
+        "max_count": 1,
+        "options": [
+            [
+                35,
+                50,
+                118,
+                71,
+                103
+            ],
+            [
+                35,
+                50,
+                12,
+                125,
+                113
+            ],
+            [
+                35,
+                50,
+                110,
+                34,
+                128
+            ],
+            [
+                35,
+                50,
+                33,
+                111,
+                24
+            ],
+            [
+                35,
+                50,
+                33,
+                107,
+                11
+            ],
+            [
+                35,
+                50,
+                111,
+                101,
+                109
+            ],
+            [
+                35,
+                50,
+                66,
+                131,
+                122
+            ],
+            [
+                35,
+                50,
+                101,
+                115,
+                24
+            ],
+            [
+                35,
+                50,
+                110,
+                99,
+                121
+            ]
+        ],
+        "defaults": [
+            [
+                35,
+                50,
+                110,
+                34,
+                128
+            ]
+        ]
+    },
+    "123": {
+        "class": "Isotope",
+        "ID": 123,
+        "element": "SPIN",
+        "infexes": [],
+        "freedom": 0.1290431273517137,
+        "max_count": 9,
+        "options": [
+            [
+                112,
+                80,
+                10
+            ],
+            [
+                115,
+                143,
+                20
+            ]
+        ],
+        "defaults": [
+            [
+                112,
+                80,
+                10
+            ]
+        ]
+    },
+    "124": {
+        "class": "Isotope",
+        "ID": 124,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0.05294767568979375,
+        "max_count": 5,
+        "options": [
+            [
+                109,
+                94
+            ],
+            [
+                116,
+                41
+            ]
+        ],
+        "defaults": [
+            [
+                109,
+                94
+            ]
+        ]
+    },
+    "125": {
+        "class": "Isotope",
+        "ID": 125,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0.5562133665582945,
+        "max_count": 133,
+        "options": [
+            [
+                14,
+                50,
+                128,
+                25,
+                97
+            ],
+            [
+                14,
+                50,
+                141,
+                108,
+                138
+            ]
+        ],
+        "defaults": [
+            [
+                14,
+                50,
+                128,
+                25,
+                97
+            ]
+        ]
+    },
+    "126": {
+        "class": "Isotope",
+        "ID": 126,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.14466918156453082,
+        "max_count": 129,
+        "options": [
+            [
+                118
+            ],
+            [
+                128
+            ]
+        ],
+        "defaults": [
+            [
+                128
+            ]
+        ]
+    },
+    "127": {
+        "class": "Isotope",
+        "ID": 127,
+        "element": "SIGMOID",
+        "infexes": [],
+        "freedom": 0.2967531644875024,
+        "max_count": 24,
+        "options": [
+            [
+                107
+            ],
+            [
+                119
+            ]
+        ],
+        "defaults": [
+            [
+                107
+            ]
+        ]
+    },
+    "128": {
+        "class": "Isotope",
+        "ID": 128,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 56,
+        "options": [
+            [
+                112
+            ]
+        ],
+        "defaults": [
+            [
+                112
+            ]
+        ]
+    },
+    "129": {
+        "class": "Isotope",
+        "ID": 129,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0.17524816936574805,
+        "max_count": 84,
+        "options": [
+            [
+                128,
+                108
+            ],
+            [
+                118,
+                56
+            ]
+        ],
+        "defaults": [
+            [
+                128,
+                108
+            ]
+        ]
+    },
+    "130": {
+        "class": "Isotope",
+        "ID": 130,
+        "element": "GMEAN",
+        "infexes": [
+            3,
+            11
+        ],
+        "freedom": 0.3449293156984147,
+        "max_count": 38,
+        "options": [
+            [
+                133,
+                103,
+                134,
+                133,
+                88,
+                23,
+                9,
+                87,
+                47,
+                46,
+                123
+            ],
+            [
+                109,
+                48,
+                28,
+                105,
+                51,
+                139,
+                40,
+                78,
+                104,
+                98
+            ]
+        ],
+        "defaults": [
+            [
+                109,
+                48,
+                28,
+                105,
+                51,
+                139,
+                40,
+                78,
+                104,
+                98
+            ]
+        ]
+    },
+    "131": {
+        "class": "Isotope",
+        "ID": 131,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0.20584441441416162,
+        "max_count": 51,
+        "options": [
+            [
+                48,
+                41
+            ],
+            [
+                123,
+                50
+            ]
+        ],
+        "defaults": [
+            [
+                48,
+                41
+            ]
+        ]
+    },
+    "132": {
+        "class": "Isotope",
+        "ID": 132,
+        "element": "POW",
+        "infexes": [],
+        "freedom": 0.49407321382263186,
+        "max_count": 14,
+        "options": [
+            [
+                135
+            ],
+            [
+                70
+            ]
+        ],
+        "defaults": [
+            [
+                70
+            ]
+        ]
+    },
+    "133": {
+        "class": "Isotope",
+        "ID": 133,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.37220774120249805,
+        "max_count": 24,
+        "options": [
+            [
+                25
+            ],
+            [
+                140
+            ],
+            [
+                83
+            ]
+        ],
+        "defaults": [
+            [
+                140
+            ]
+        ]
+    },
+    "134": {
+        "class": "Isotope",
+        "ID": 134,
+        "element": "IT",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 41,
+        "options": [
+            [
+                19,
+                70,
+                53,
+                27,
+                61
+            ]
+        ],
+        "defaults": [
+            [
+                19,
+                70,
+                53,
+                27,
+                61
+            ]
+        ]
+    },
+    "135": {
+        "class": "Isotope",
+        "ID": 135,
+        "element": "GMEAN",
+        "infexes": [
+            2,
+            9
+        ],
+        "freedom": 0.049343900969265865,
+        "max_count": 75,
+        "options": [
+            [
+                21,
+                56,
+                22,
+                58,
+                11,
+                19,
+                145
+            ],
+            [
+                67,
+                118,
+                106,
+                82,
+                43,
+                144,
+                39,
+                51,
+                114
+            ]
+        ],
+        "defaults": [
+            [
+                21,
+                56,
+                22,
+                58,
+                11,
+                19,
+                145
+            ]
+        ]
+    },
+    "136": {
+        "class": "Isotope",
+        "ID": 136,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.4370070747316887,
+        "max_count": 10,
+        "options": [
+            [
+                41
+            ],
+            [
+                55
+            ]
+        ],
+        "defaults": [
+            [
+                41
+            ],
+            [
+                55
+            ]
+        ]
+    },
+    "137": {
+        "class": "Isotope",
+        "ID": 137,
+        "element": "MINX",
+        "infexes": [
+            3,
+            3
+        ],
+        "freedom": 0,
+        "max_count": 9,
+        "options": [
+            [
+                47,
+                23,
+                11
+            ]
+        ],
+        "defaults": [
+            [
+                47,
+                23,
+                11
+            ]
+        ]
+    },
+    "138": {
+        "class": "Isotope",
+        "ID": 138,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.299438351389932,
+        "max_count": 22,
+        "options": [
+            [
+                57
+            ],
+            [
+                122
+            ]
+        ],
+        "defaults": [
+            [
+                57
+            ]
+        ]
+    },
+    "139": {
+        "class": "Isotope",
+        "ID": 139,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 16,
+        "options": [
+            [
+                136
+            ]
+        ],
+        "defaults": [
+            [
+                136
+            ]
+        ]
+    },
+    "140": {
+        "class": "Isotope",
+        "ID": 140,
+        "element": "POW",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 62,
+        "options": [
+            [
+                149
+            ]
+        ],
+        "defaults": [
+            [
+                149
+            ]
+        ]
+    },
+    "141": {
+        "class": "Isotope",
+        "ID": 141,
+        "element": "POWER",
+        "infexes": [],
+        "freedom": 0.3674665282394392,
+        "max_count": 13,
+        "options": [
+            [
+                106,
+                58
+            ],
+            [
+                102,
+                93
+            ]
+        ],
+        "defaults": [
+            [
+                106,
+                58
+            ]
+        ]
+    },
+    "142": {
+        "class": "Isotope",
+        "ID": 142,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 1,
+        "options": [
+            [
+                90
+            ]
+        ],
+        "defaults": [
+            [
+                90
+            ]
+        ]
+    },
+    "143": {
+        "class": "Isotope",
+        "ID": 143,
+        "element": "POW",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 49,
+        "options": [
+            [
+                79
+            ]
+        ],
+        "defaults": [
+            [
+                79
+            ]
+        ]
+    },
+    "144": {
+        "class": "Isotope",
+        "ID": 144,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.24787428101039674,
+        "max_count": 31,
+        "options": [
+            [
+                136
+            ],
+            [
+                151
+            ]
+        ],
+        "defaults": [
+            [
+                136
+            ]
+        ]
+    },
+    "145": {
+        "class": "Isotope",
+        "ID": 145,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.0659141219595684,
+        "max_count": 153,
+        "options": [
+            [
+                58
+            ],
+            [
+                106
+            ]
+        ],
+        "defaults": [
+            [
+                58
+            ],
+            [
+                106
+            ]
+        ]
+    },
+    "146": {
+        "class": "Isotope",
+        "ID": 146,
+        "element": "INV",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 10,
+        "options": [
+            [
+                39
+            ]
+        ],
+        "defaults": [
+            [
+                39
+            ]
+        ]
+    },
+    "147": {
+        "class": "Isotope",
+        "ID": 147,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.412251642261928,
+        "max_count": 18,
+        "options": [
+            [
+                120
+            ],
+            [
+                118
+            ],
+            [
+                31
+            ]
+        ],
+        "defaults": [
+            [
+                31
+            ]
+        ]
+    },
+    "148": {
+        "class": "Isotope",
+        "ID": 148,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 19,
+        "options": [
+            [
+                21
+            ]
+        ],
+        "defaults": [
+            [
+                21
+            ]
+        ]
+    },
+    "149": {
+        "class": "Isotope",
+        "ID": 149,
+        "element": "SIN",
+        "infexes": [],
+        "freedom": 0.020713642210229994,
+        "max_count": 7,
+        "options": [
+            [
+                41
+            ],
+            [
+                63
+            ]
+        ],
+        "defaults": [
+            [
+                41
+            ],
+            [
+                63
+            ]
+        ]
+    },
+    "150": {
+        "class": "Isotope",
+        "ID": 150,
+        "element": "POW",
+        "infexes": [],
+        "freedom": 0,
+        "max_count": 15,
+        "options": [
+            [
+                97
+            ]
+        ],
+        "defaults": [
+            [
+                97
+            ]
+        ]
+    },
+    "151": {
+        "class": "Isotope",
+        "ID": 151,
+        "element": "AMEAN",
+        "infexes": [
+            2,
+            10
+        ],
+        "freedom": 0.24378126754063512,
+        "max_count": 39,
+        "options": [
+            [
+                110,
+                148,
+                42,
+                128,
+                111,
+                24,
+                21
+            ],
+            [
+                111,
+                13,
+                52,
+                96,
+                130,
+                72,
+                84,
+                79,
+                77,
+                117
+            ]
+        ],
+        "defaults": [
+            [
+                110,
+                148,
+                42,
+                128,
+                111,
+                24,
+                21
+            ]
+        ]
+    }
+}
