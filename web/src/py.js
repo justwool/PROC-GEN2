@@ -1,4 +1,4 @@
-import { REQUIRED_FILES, snapshotDir, writeBinary, writeText } from './fs.js';
+import { snapshotDir, writeBinary, writeText } from './fs.js';
 
 const PYODIDE_URL = 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';
 
@@ -24,15 +24,13 @@ async function loadScript(src) {
   });
 }
 
-function repoFileUrl(relPath) {
-  return `/@fs${__REPO_ROOT__}/${relPath}`;
-}
-
 export async function bootPyodide({ onWrite }) {
   stdinQueue = [];
   stdinResolvers = [];
   await loadScript(PYODIDE_URL);
-  pyodide = await globalThis.loadPyodide({});
+  pyodide = await globalThis.loadPyodide({
+    indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/',
+  });
 
   if (typeof SharedArrayBuffer !== 'undefined' && pyodide.setInterruptBuffer) {
     interruptBuffer = new Uint8Array(new SharedArrayBuffer(1));
@@ -75,6 +73,18 @@ def input(prompt=""):
 builtins.input = input
 `);
 
+  await pyodide.runPythonAsync(`
+import os, errno
+try:
+    st = os.stat("/data")
+    # if it exists but is not a dir, remove it
+    if not os.path.isdir("/data"):
+        os.remove("/data")
+        os.mkdir("/data")
+except FileNotFoundError:
+    os.mkdir("/data")
+`);
+
   await loadProjectFiles();
   return pyodide;
 }
@@ -103,15 +113,43 @@ art.main()
 `);
 }
 
+function isTextFile(path) {
+  return /\.(txt|py|json|gitkeep)$/i.test(path);
+}
+
 export async function loadProjectFiles() {
-  for (const path of REQUIRED_FILES) {
-    const res = await fetch(repoFileUrl(path));
-    if (!res.ok) throw new Error(`Failed to load ${path}`);
-    const fsPath = `/${path}`;
-    if (/\.(txt|py|json|gitkeep)$/i.test(path)) {
-      writeText(pyodide, fsPath, await res.text());
-    } else {
-      writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+  const manifestRes = await fetch('/manifest.json');
+  if (!manifestRes.ok) {
+    throw new Error(`fetch /manifest.json -> ${manifestRes.status}`);
+  }
+
+  const manifest = await manifestRes.json();
+  const pyFiles = Array.isArray(manifest?.py) ? manifest.py : [];
+  const dataFiles = Array.isArray(manifest?.data) ? manifest.data : [];
+
+  for (const name of pyFiles) {
+    const url = `/py/${name}`;
+    const fsPath = `/${name}`;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`fetch ${url} -> ${res.status} (write ${fsPath})`);
+      if (isTextFile(name)) writeText(pyodide, fsPath, await res.text());
+      else writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+    } catch (e) {
+      throw new Error(`loadProjectFiles failed on ${name} -> ${fsPath}: ${e?.message || e}`);
+    }
+  }
+
+  for (const name of dataFiles) {
+    const url = `/data/${name}`;
+    const fsPath = `/data/${name}`;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`fetch ${url} -> ${res.status} (write ${fsPath})`);
+      if (isTextFile(name)) writeText(pyodide, fsPath, await res.text());
+      else writeBinary(pyodide, fsPath, new Uint8Array(await res.arrayBuffer()));
+    } catch (e) {
+      throw new Error(`loadProjectFiles failed on data/${name} -> ${fsPath}: ${e?.message || e}`);
     }
   }
 }
